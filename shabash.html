@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        shabash marketting place
+        <br>
+    </title>
+    <style>
+
+    </style>
+</head>
+<link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shabash</title>
+</head>
+<div class="body">
+
+    <body>
+        <div class="pass">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>You need to sign in to access this feature.</p>
+                    <button onclick="signIn()">Sign In</button>
+                </div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName('close')[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = 'none';
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = 'none';
+                    }
+                }
+
+                // Function to simulate signing in
+                function signIn() {
+                    alert('Simulating sign-in...');
+                    // You can add your sign-in logic here
+                }
+            </script>
+        </div>
+
+        <!-- Trigger the modal -->
+        <button onclick="modal.style.display = 'block'">Access Feature</button>
+
+        <div class="agri">
+            <h1 class="h1">AGRRICULTURAL MARKETTING AND EXTENTION PLATFORM</h1>
+            <form action="/search" method="GET" class="search">
+                <input type="text" name="query" placeholder="Enter your search query">
+                <button type="submit">Search</button>
+            </form>
+
+        </div>
+        <img src="image/R.jpg" alt="" height="700" width="1500">
+
+        <div class="edward">
+            <ul class="menu" id="menuList">
+            </ul>
+
+            <script>
+                // Data for menu items
+                var menuItems = [{
+                    text: 'Home',
+                    url: '#'
+                }, {
+                    text: 'About',
+                    url: '#'
+                }, {
+                    text: 'Services',
+                    url: '#'
+                }, {
+                    text: 'Contact',
+                    url: '#'
+                }];
+
+                // Function to create menu items
+                function createMenuItem(item) {
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.textContent = item.text;
+                    a.href = item.url;
+                    li.appendChild(a);
+                    return li;
+                }
+
+                // Function to populate menu with items
+                function populateMenu(menuItems) {
+                    var menuList = document.getElementById('menuList');
+                    menuItems.forEach(function(item) {
+                        var menuItem = createMenuItem(item);
+                        menuList.appendChild(menuItem);
+                    });
+                }
+
+                // Call the function to populate the menu
+                populateMenu(menuItems);
+            </script>
+
+
+
+            <p class="p1">
+                This is a trustworthy platform where you can buy and sell your agricultural produce. Through this platform you can also find some information about different farming practices and any kind of information about agriculture.
+            </p>
+
+            <div>
+                <video width="700px" heigt="350" controls>            
+                <source  src="videos.mp4/National Smallholder Farmers' Association of Malawi - Promoting agriculture for young farmers.mp4" />
+               </video>
+
+                <b> 
+    <h2>ITEMS WE OFFER</h2>
+        
+    <li>celio</li>
+    <b>
+    <li>legumes</li>
+    <b>
+    <li>fruits</li>
+    <b>
+    <li>vegetables</li>
+    <h2>celio</h2>
+    <ol>
+        <li>maize</li>
+        <li>yarms</li>
+        <li>rice</li>        
+        <br>
+    </ol>
+<!-- Button to open the PDF file -->
+<a href="D:\Desktop\web projets\Documents\maize.pdf" target="_blank">
+ 
+  <h4>for more information click this:<button class="button1">explore</button>
+  </a>
+     <br>
+    <h2>legumes</h2>
+    <ol>
+    <li>beans</li>
+    <li>soya beans</li>
+    <li>groundnuts</li>
+    <b>
+    </ol>
+    <h2>fruits</h2>
+    <ol>
+        <li>bananas</li>
+        <li>citrus fruits</li>
+        <li>many more</li>
+        <b>
+    </ol>
+    <img src="image/download.jpg" alt= "delicious foods" width="1500px" height="500px">
+    <!-- Button to open the PDF file -->
+<a href="D:\Desktop\web projets\Documents\fuit.pdf" target="_blank">
+ 
+    <h4>for more information click this:<button class="button1">explore</button>
+    </a>
+    <h2>vegetables</h2>
+    <ol>
+        <li>mpiru</li>
+        <li>chinese</li>
+        <li>many more</li>
+        <br>
+    </ol>
+    <!-- Button to open the PDF file -->
+<a href="D:\Desktop\web projets\Documents\vege.pdf" target="_blank">
+ 
+    <h4>for more information click this:<button class="button1">explore</button>
+    </a>
+    <form>
+        <div class="form">
+        <h3>SIGN IN THIS FORM</h3>
+        <label>first name:</label>
+        <input type="text" name="" id="">
+        <label>second name:</label>ssss
+        <input type="text" name="" id="">
+        <b>
+        <label>email</label>
+        <input type="email" name="" id="">
+        <b>
+            <b>
+                <b>   
+            <label>password</label>
+            <input type="text" name="" id="">
+            <b>
+                <b>
+            <label>confirm password</label>
+        <input type="text" name="" id="">
+        <b>
+            <b> 
+            </div> 
+    </form>
+        <b>
+            <button class="button1">submit</button>
+            <b>
+        <form>
+            <h3>items available</h3>
+            <label>celio</label>
+            <select>
+            <option value="yarms">yarms</option>
+            <option value="maize">maize</option>
+            <option value="rice">rice</option>
+        </select>
+            <label>legumes</label>
+        <select>
+            <option value="beans">beans</option>
+            <option value="soya beans">soya beans</option>
+            <option value="rice">many more</option>
+        </select>
+            <label>fruits</label>
+        <select>
+            <option value="bananas">bananas</option>
+            <option value="citrus">citrus</option>
+            <option value="many more">many more</option>
+        </select>
+            <label>vegetables</label>
+        <select>
+            <option value="mpiru">mpiru</option>
+            <option value="chinese">chinese</option>
+            <option value="many more">many more</option>
+        </select>
+        </form>
+    <b>
+    <button class="button1">submit</button>
+</div>
+</div>
+<div class="method">
+<form action="http://www.example/profile.php">
+    <h2>methods of payment</h2>
+    <select name="device" id="">
+        <option value="Airtel Money">Airtel Money</option>
+        <option value="TNM Mpamba">TNM Mpamba</option>
+        <option value="Mo626">Mo626</option>
+        <option value="Unayo FDH">Unayo FDH</option>
+
+
+    </select>
+</form>
+<form action="http://www.example/profile.php">
+    <p>you can comment below on our products:</p>
+    <textarea name="comments" id="" cols="20" rows="4">enter your comment</textarea>
+</form>
+</div>
+<footer>
+    <P>&copy; 2024 Edward young shaba</P>
+</footer>
+
+</body>
+</div>
+
+</html>
